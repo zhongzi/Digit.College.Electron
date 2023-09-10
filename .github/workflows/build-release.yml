@@ -2,9 +2,6 @@ name: Build release
 
 on:
   push:
-    branches:
-      - master
-      - develop
     tags:
       - '*'
 
@@ -52,7 +49,7 @@ jobs:
           mac_csc_key_password: ${{ secrets.MAC_CSC_KEY_PASSWORD }}
           mac_apple_id: ${{ secrets.APPLEID }}
           mac_apple_id_password: ${{ secrets.APPLEIDPASS }}
-          mac_asc_provider: 'S6UPZG7ZR3'
+          mac_asc_provider: ${{ secrets.MAC_CSC_TEAM_ID }}
           win_csc_link: ${{ secrets.WIN_CSC_LINK }}
           win_csc_key_password: ${{ secrets.WIN_CSC_KEY_PASSWORD }}
           github_token: ${{ secrets.GH_TOKEN }}

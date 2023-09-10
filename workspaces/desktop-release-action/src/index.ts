@@ -143,9 +143,9 @@ const start = async () => {
     return;
   }
 
-  if (ref === 'refs/heads/master') {
+  if (ref === 'refs/heads/main') {
     core.info(
-      `push event on master branch detected, performing snapshot release`
+      `push event on main branch detected, performing snapshot release`
     );
     await releaseSnapshot(payload.after);
     return;
