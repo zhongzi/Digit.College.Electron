@@ -7,11 +7,11 @@
     "build/icon.ico",
     "servers.json"
   ],
-  "appId": "chat.rocket",
+  "appId": "com.digitcollege.chat",
   "protocols": {
-    "name": "Rocket.Chat",
+    "name": "DigitCollege",
     "schemes": [
-      "rocketchat"
+      "digitcollege"
     ]
   },
   "mac": {
@@ -24,9 +24,9 @@
     ],
     "icon": "build/icon.icns",
     "bundleVersion": "118",
-    "helperBundleId": "chat.rocket.electron.helper",
+    "helperBundleId": "college.digit.electron.helper",
     "type": "distribution",
-    "artifactName": "rocketchat-${version}-${os}.${ext}",
+    "artifactName": "digitcollege-${version}-${os}.${ext}",
     "mergeASARs": false,
     "extendInfo": {
       "NSMicrophoneUsageDescription": "I need access to your microphone to record the audio you want to send.",
@@ -65,7 +65,7 @@
     "asarUnpack": [
       "node_modules"
     ],
-    "artifactName": "rocketchat-${version}-mas.${ext}"
+    "artifactName": "digitcollege-${version}-mas.${ext}"
   },
   "win": {
     "target": [
@@ -92,13 +92,13 @@
       }
     ],
     "icon": "build/icon.ico",
-    "publisherName": "Rocket.Chat Technologies Corp.",
+    "publisherName": "DigitCollege Technologies Corp.",
     "legalTrademarks": "",
     "verifyUpdateCodeSignature": true,
     "requestedExecutionLevel": "asInvoker",
     "signAndEditExecutable": true,
     "signDlls": false,
-    "artifactName": "rocketchat-${version}-${os}-${arch}.${ext}"
+    "artifactName": "digitcollege-${version}-${os}-${arch}.${ext}"
   },
   "nsis": {
     "oneClick": false,
@@ -128,11 +128,11 @@
       "en-GB",
       "pt-BR"
     ],
-    "identityName": "0B67C87C.RocketChat",
+    "identityName": "0B67C87C.DigitCollege",
     "publisher": "CN=BBFF7141-7CAF-4FCD-8930-083FCDE6E854",
-    "publisherDisplayName": "Rocket.Chat Technologies Corp.",
-    "applicationId": "RocketChat",
-    "displayName": "Rocket.Chat"
+    "publisherDisplayName": "DigitCollege Technologies Corp.",
+    "applicationId": "DigitCollege",
+    "displayName": "DigitCollege"
   },
   "linux": {
     "target": [
@@ -143,13 +143,13 @@
       "snap",
       "flatpak"
     ],
-    "executableName": "rocketchat-desktop",
+    "executableName": "digitcollege-desktop",
     "category": "GNOME;GTK;Network;InstantMessaging",
     "desktop": {
-      "StartupWMClass": "Rocket.Chat",
-      "MimeType": "x-scheme-handler/rocketchat"
+      "StartupWMClass": "DigitCollege",
+      "MimeType": "x-scheme-handler/digitcollege"
     },
-    "artifactName": "rocketchat-${version}-${os}-${arch}.${ext}"
+    "artifactName": "digitcollege-${version}-${os}-${arch}.${ext}"
   },
   "rpm": {
     "fpm": [
@@ -180,8 +180,8 @@
   "publish": [
     {
       "provider": "github",
-      "owner": "RocketChat",
-      "repo": "Rocket.Chat.Electron",
+      "owner": "zhongzi",
+      "repo": "Digit.College.Electron",
       "vPrefixedTagName": false
     }
   ]

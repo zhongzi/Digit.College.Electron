@@ -18,12 +18,12 @@ exports.default = function notarizing(context) {
     }, 15000);
 
     notarize({
-      appBundleId: 'chat.rocket',
+      appBundleId: 'com.digitcollege.chat',
       appPath: `${appOutDir}/${appName}.app`,
       appleId: process.env.APPLEID,
       appleIdPassword: process.env.APPLEIDPASS,
-      ascProvider: 'S6UPZG7ZR3',
-      teamId: 'S6UPZG7ZR3',
+      ascProvider: '385S2RNHJ9',
+      teamId: '385S2RNHJ9',
     })
       .then(() => {
         clearTimeout(timer);

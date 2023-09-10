@@ -601,7 +601,7 @@ const createHelpMenu = createSelector(
         id: 'documentation',
         label: t('menus.documentation'),
         click: () => {
-          shell.openExternal('https://docs.rocket.chat/');
+          shell.openExternal('https://chat.digitcollege.com/');
         },
       },
       {
@@ -609,7 +609,7 @@ const createHelpMenu = createSelector(
         label: t('menus.reportIssue'),
         click: () => {
           shell.openExternal(
-            'https://github.com/RocketChat/Rocket.Chat/issues/new'
+            'https://chat.digitcollege.com'
           );
         },
       },
